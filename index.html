@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎉 JavaScript Interactivity Demo</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Game -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p id="counterValue">0</p>
+      <button id="increaseBtn">➕ Increase</button>
+      <button id="decreaseBtn">➖ Decrease</button>
+      <button id="resetBtn">🔄 Reset</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>❓ FAQ</h2>
+      <div class="faq">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is a programming language used to add interactivity to websites.</p>
+      </div>
+      <div class="faq">
+        <h3 class="faq-question">What is DOM?</h3>
+        <p class="faq-answer">DOM stands for Document Object Model. It represents the structure of your web page.</p>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2>📋 Sign Up Form</h2>
+      <form id="signupForm">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+        <span class="error" id="nameError"></span><br>
+
+        <label>Email:</label>
+        <input type="text" id="email" required>
+        <span class="error" id="emailError"></span><br>
+
+        <label>Password:</label>
+        <input type="password" id="password" required>
+        <span class="error" id="passwordError"></span><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formSuccess"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
